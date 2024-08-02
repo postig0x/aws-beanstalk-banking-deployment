@@ -10,7 +10,7 @@ A new "multibranch pipeline" item is created in order to create a job that will 
 
 After building and testing as specified in this repositories "Jenkinsfile", we get the following successful build logs:
 
---insert Jenkins screenshot here--
+![Jenkins Results](/screenshots/jenkins_result.png)
 
 The result of the actions specified in the Jenkinsfile can be found within the Jenkins server in the `/var/lib/jenkins/workspace/<app-name>/test-reports` directory. Similarly, the application software retrieved from Github by Jenkins can be found in the `/var/lib/jenkins/workspace/<app-name>` directory.
 
@@ -24,4 +24,5 @@ As of 08/01/2024, the application can be accessed through `http://awsbeanstalkba
 
 A relationship diagram of the developer, client, and workload internals are provided in the screenshot below:
 
+![Workload 1 Diagram](/screenshots/workload1diagram.drawio.png)
 
