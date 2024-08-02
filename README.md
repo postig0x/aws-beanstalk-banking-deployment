@@ -26,3 +26,15 @@ A relationship diagram of the developer, client, and workload internals are prov
 
 ![Workload 1 Diagram](/screenshots/workload1diagram.png)
 
+## Issues
+
+One main issue that I encountered was with AWS EB. When attempting to access the application through the URL provided, I received a 502 Gateway error. This was due to the fact that the zip file had been compressed incorrectly. In other words, the application files were nested in an additional directory within the zip file, so the deployment was unsuccessful. After compressing the application files directly instead of compressing the parent directory, AWS EB was able to deploy the application successfully.
+
+Another issue I ran into was when trying to clone the initial workload repository. Creating an access token was giving me issues, so I decided to create an SSH key within my personal EC2 instance to be able to access github remotely.
+
+## Optimization
+
+Using managed services like AWS Elastic Beanstalk for cloud infrastructure provides the convenience of deploying scalable software applications in desired geographical regions without the need to worry about networking or managing the servers that serve the application.
+
+On the other hand, a retail bank opting to use AWS Elastic Beanstalk as their managed service may want to consider implementing additional security measures within their infrastructure so as to meet regulatory requirements and enhance security overall. If a retail bank is large, AWS EB may become expensive if the service is constantly managing larger instances in various regions. Finally, a retail bank may become locked into the AWS ecosystem if they are dependent on AWS EB to run all of their application software, which would make it difficult to switch to a different service.
+
