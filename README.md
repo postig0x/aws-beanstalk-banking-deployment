@@ -24,5 +24,5 @@ As of 08/01/2024, the application can be accessed through `http://awsbeanstalkba
 
 A relationship diagram of the developer, client, and workload internals are provided in the screenshot below:
 
-![Workload 1 Diagram](/screenshots/workload1diagram.drawio.png)
+![Workload 1 Diagram](/screenshots/workload1diagram.png)
 
